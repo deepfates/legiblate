@@ -78,7 +78,7 @@ if getter == "Search":
 
         sel =  st.radio("Which book?", (op["cover_i"]))
         cover = get_cover(sel, "L")
-        st.image(cover, width=700)
+        st.image(cover)
         img = open_image(BytesIO(cover))
 
 try:
