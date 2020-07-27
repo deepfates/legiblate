@@ -56,7 +56,7 @@ Upload an image, or search through the OpenLibrary database.
 
 The AI has seen 57,000 book covers in its training. Newer books will be harder for it to guess, but it will do its best.
 
-Try uploading images that aren't books -- see what kind of covers they could become!
+Try uploading images that aren't books -- see what kind of covers they could become!``
 
 """)
 st.subheader("Get an image:")
@@ -66,7 +66,7 @@ getter = st.radio("", ["Upload", "Search"])
 if getter == "Upload":
     upload = st.file_uploader("")
     if upload:
-        st.image(upload, width=700)
+        st.image(upload)
         img = open_image(upload)
         df = predict(img)
 
