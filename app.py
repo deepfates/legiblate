@@ -48,7 +48,17 @@ path = '.'
 learn = load_model(path)
 
 
-st.title("Judging a Book by its Cover")
+st.title("LEGIBLATE")
+st.write("""
+## Use AI to guess a book's genre from its cover!
+
+Upload an image, or search through the OpenLibrary database.
+
+The AI has seen 57,000 book covers in its training. Newer books will be harder for it to guess, but it will do its best.
+
+Try uploading images that aren't books -- see what kind of covers they could become!
+
+""")
 st.subheader("Get an image:")
 
 getter = st.radio("", ["Upload", "Search"])
