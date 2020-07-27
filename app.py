@@ -54,7 +54,7 @@ st.subheader("Get an image:")
 getter = st.radio("", ["Upload", "Search"])
 
 if getter == "Upload":
-    upload = st.file_uploader("", ['png','jpg'])
+    upload = st.file_uploader("")
     if upload:
         st.image(upload, width=700)
         img = open_image(upload)
